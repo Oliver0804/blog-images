@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0b1220"/>
+      <stop offset="0.55" stop-color="#0a2a2a"/>
+      <stop offset="1" stop-color="#1c1730"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#3dd6d0"/>
+      <stop offset="1" stop-color="#ffd166"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="14" stdDeviation="18" flood-color="#000" flood-opacity="0.45"/>
+    </filter>
+  </defs>
+
+  <rect width="1200" height="630" fill="url(#bg)"/>
+
+  <!-- subtle grid -->
+  <g opacity="0.10" stroke="#ffffff" stroke-width="1">
+    <path d="M0 90 H1200"/>
+    <path d="M0 180 H1200"/>
+    <path d="M0 270 H1200"/>
+    <path d="M0 360 H1200"/>
+    <path d="M0 450 H1200"/>
+    <path d="M0 540 H1200"/>
+    <path d="M120 0 V630"/>
+    <path d="M240 0 V630"/>
+    <path d="M360 0 V630"/>
+    <path d="M480 0 V630"/>
+    <path d="M600 0 V630"/>
+    <path d="M720 0 V630"/>
+    <path d="M840 0 V630"/>
+    <path d="M960 0 V630"/>
+    <path d="M1080 0 V630"/>
+  </g>
+
+  <!-- headline -->
+  <g transform="translate(78,112)">
+    <rect x="0" y="0" width="240" height="10" rx="5" fill="url(#accent)"/>
+    <text x="0" y="72" fill="#ffffff" font-size="44" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace" font-weight="700" letter-spacing="-0.5">
+      Claude Code 工作流
+    </text>
+    <text x="0" y="126" fill="#cfe7ff" font-size="28" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace" font-weight="600">
+      everything-claude-code 戰鬥配置拆解
+    </text>
+    <text x="0" y="172" fill="#b6c2d6" font-size="18" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace">
+      hooks / agents / skills / commands / rules / MCP
+    </text>
+  </g>
+
+  <!-- code card -->
+  <g transform="translate(620,150)" filter="url(#shadow)">
+    <rect x="0" y="0" width="510" height="330" rx="18" fill="#0b0f16" stroke="#23324b" stroke-width="2"/>
+    <rect x="0" y="0" width="510" height="46" rx="18" fill="#111827"/>
+    <circle cx="26" cy="23" r="7" fill="#ff5f57"/>
+    <circle cx="48" cy="23" r="7" fill="#febc2e"/>
+    <circle cx="70" cy="23" r="7" fill="#28c840"/>
+    <text x="96" y="30" fill="#c7d2fe" font-size="14" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace">
+      terminal
+    </text>
+
+    <g font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace" font-size="16">
+      <text x="22" y="92" fill="#67e8f9">$</text>
+      <text x="44" y="92" fill="#e5e7eb">/plugin marketplace add affaan-m/everything-claude-code</text>
+
+      <text x="22" y="128" fill="#67e8f9">$</text>
+      <text x="44" y="128" fill="#e5e7eb">/plugin install everything-claude-code@everything-claude-code</text>
+
+      <text x="22" y="172" fill="#a7f3d0">#</text>
+      <text x="44" y="172" fill="#d1d5db">hooks: format + tsc + guardrails</text>
+
+      <text x="22" y="206" fill="#a7f3d0">#</text>
+      <text x="44" y="206" fill="#d1d5db">agents: planner / reviewer / build-fix</text>
+
+      <text x="22" y="240" fill="#a7f3d0">#</text>
+      <text x="44" y="240" fill="#d1d5db">MCP: lots configured, few enabled</text>
+
+      <text x="22" y="284" fill="#67e8f9">$</text>
+      <text x="44" y="284" fill="#e5e7eb">node tests/run-all.js</text>
+    </g>
+  </g>
+
+  <!-- footer label -->
+  <g transform="translate(78,572)">
+    <rect x="0" y="0" width="420" height="36" rx="18" fill="#0b0f16" stroke="#23324b" stroke-width="2"/>
+    <text x="18" y="24" fill="#9ca3af" font-size="14" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace">
+      Blog asset • 1200×630 SVG • generated locally
+    </text>
+  </g>
+</svg>
